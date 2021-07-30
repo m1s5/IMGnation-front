@@ -1,0 +1,10 @@
+:root {
+    --background-white: #FEEAFA;
+    --background-gray: #DEE2FF;
+    --background-orange: #EFD3D7;
+    --background-purple: #CBC0D3;
+    --background-purple-dark: #8E9AAF;
+    --text-main: #2b2d42;
+    --text-alert: #ef233c;
+    --text-success: #5ebb74;
+}

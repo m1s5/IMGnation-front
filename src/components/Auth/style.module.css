@@ -1,0 +1,52 @@
+@import "../Global/variables.css";
+
+
+.auth {
+    display: grid; 
+    background-color: var(--background-orange);
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". Form ."
+      ". . ."; 
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+.form{
+  grid-area: Form;
+}
+
+.formLogin {
+  background-color: var(--background-white);
+  grid-area: Form;
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "label"
+    "login"
+    "password"
+    "submit"
+    "switch"; 
+}
+
+.formRegistration{
+  background-color: var(--background-white);
+  grid-area: Form;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "label"
+    "login"
+    "password"
+    "password"
+    "submit"
+    "switch"; 
+}

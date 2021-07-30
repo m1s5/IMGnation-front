@@ -1,17 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import Auth from "./components/Auth/Auth";
+import Feed from "./components/Feed/Feed";
+import Profile from "./components/Profile/Profile";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          продам гараж
-        </p>
-
-      </header>
+    <div className="app">
+      <div className="parent_wrapper">
+        <Router>
+         
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => {
+                return <Redirect to="/login" />;
+              }}
+            />
+            <Route exact path="/login">
+              <Auth />
+            </Route>
+            <Route exact path="/profile">
+            <Navbar />
+              <Profile />
+            </Route>
+            <Navbar />
+            <Route exact path="/feed">
+              <Feed />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }

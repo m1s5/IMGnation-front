@@ -1,0 +1,83 @@
+@import "../Global/variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+.navbar{
+    overflow: hidden;
+    background-color: var(--background-orange);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Style Script', cursive;
+}
+
+
+.horizontal_center{
+    display: table;
+    margin: 0 auto;
+}
+
+
+.iconBackground__selected__profile{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  var(--background-white);
+}
+
+.iconBackground__profile{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  var(--background-white);
+}
+
+.iconBackground__feed{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  var(--background-white);
+}
+
+.iconBackground__profile:hover{
+    background-color: #6d597a;
+    padding: 5px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.iconBackground__selected__feed{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  var(--background-white);
+}
+
+.iconBackground__feed:hover{
+    background-color: #e56b6f;
+    padding: 5px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.text{
+    position: relative;
+    top: 20%;
+    font-size: 2rem;
+    color:  var(--background-white);
+}
+
+.navbar_grid {
+    
+    left: 10%;
+    position: relative;
+    display: grid; 
+    grid-template-columns: 200px 50px 50px; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "title profile feed"; 
+  }
