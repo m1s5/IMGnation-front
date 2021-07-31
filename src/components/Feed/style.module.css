@@ -1,0 +1,82 @@
+@import "../Global/variables.css";
+
+.center {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsCollection {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 33.333333%;
+  margin-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-y: auto;
+}
+
+.card {
+  width: 20vw;
+  height: 20vw;
+  background-color: var(--main-background-white);
+  list-style: none;
+  margin: 15px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.1),
+    0 15px 40px rgba(166, 173, 201, 0.4);
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  background-color: var(--background-orange);
+  border-color: var(--background-orange);
+  align-items: center;
+  overflow: hidden
+}
+
+.card:hover {
+  width: 20vw;
+  height: 20vw;
+  background-color: var(--main-background-gray);
+  border-radius: 4px;
+  list-style: none;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  background-color: var(--background-white);
+  border-color: var(--background-orange);
+}
+
+.cardContent {
+  align-self: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.textMargins__card {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.image{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    
+}
+

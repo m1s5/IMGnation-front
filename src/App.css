@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+@import "./components//Global/variables.css";
 @import './reset.css';
+
+.app{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: var(--background-white);
+}
 
 *{
 

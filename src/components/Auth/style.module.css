@@ -1,52 +1,235 @@
 @import "../Global/variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 
+.text {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--background-purple-dark);
+}
+
+.text__small {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--background-purple-dark);
+}
+
+.text__small:hover {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--text-success);
+}
+
+.text_logo {
+  font-size: 3rem;
+  font-family: "Style Script", cursive;
+  color: var(--background-orange);
+}
 
 .auth {
-    display: grid; 
-    background-color: var(--background-orange);
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". Form ."
-      ". . ."; 
-    width: 100vw;
-    height: 100vh;
-  }
+  display: grid;
+  background-color: var(--background-orange);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". Form ."
+    ". . .";
+  width: 100vw;
+  height: 100vh;
+}
 
-
-.form{
+.form {
   grid-area: Form;
 }
 
 .formLogin {
   background-color: var(--background-white);
   grid-area: Form;
-  display: grid; 
-  grid-template-columns: 100%; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo"
     "label"
     "login"
     "password"
     "submit"
-    "switch"; 
+    "switch";
 }
 
-.formRegistration{
+.label {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.switchMode {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.login {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.password {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.submit {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.logo {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.formRegistration {
   background-color: var(--background-white);
   grid-area: Form;
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo"
     "label"
     "login"
     "password"
     "password"
     "submit"
-    "switch"; 
+    "switch";
+}
+
+
+.loginLable {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  color: var(--background-purple-dark);
+}
+
+.loginLable__warning {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  color: var(--text-alert);
+}
+
+.submitButton {
+  padding-left: 10%;
+  padding-right: 10%;
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--background-purple-dark);
+  border-color: var(--background-purple-dark);
+}
+
+.submitButton__submitteble {
+  padding-left: 10%;
+  padding-right: 10%;
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--text-success);
+  border-color: var(--text-success);
+}
+
+
+.padding__top{
+  padding-top: 10px;
+}
+
+
+
+.loginInput {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--background-orange);
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--background-orange);
+  color: var(--text-main);
+}
+
+.passwordInput {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--background-orange);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--background-orange);
+  color: var(--text-main);
+}
+
+.repeatPasswordInput {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--background-orange);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--background-orange);
+  color: var(--text-main);
+}
+
+.loginInput__warning {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--background-orange);
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--text-alert);
+  color: var(--text-alert);
+}
+
+.passwordInput__warning {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--background-orange);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--text-alert);
+  color: var(--text-alert);
+}
+
+.repeatPasswordInput__warning {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: var(--background-orange);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--text-alert);
+  color: var(--text-alert);
 }

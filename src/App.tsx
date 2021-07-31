@@ -31,10 +31,11 @@ function App() {
             <Navbar />
               <Profile />
             </Route>
-            <Navbar />
+          
             <Route exact path="/feed">
+            <Navbar />
               <Feed />
-            </Route>
+              </Route>
           </Switch>
         </Router>
       </div>
